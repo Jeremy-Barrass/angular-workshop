@@ -1,14 +1,19 @@
 <!doctype html>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <html lang="en" ng-app="countersApp">
 =======
 <html lang="en" ng-app="counterApp">
 >>>>>>> 78a62c2e3baad325b739e0defe51127b939aa65d
+=======
+<html lang="en" ng-app="counterApp">
+>>>>>>> 64afaf886cadb1de78fd5b26555d56c295cfd4f9
   <head>
     <meta charset="utf-8">
     <title>Counter</title>
     <script src="bower_components/angular/angular.js"></script>
     <script src="js/app.js"></script>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <script src="js/controllers/countersController.js"></script>
   </head>
@@ -29,5 +34,32 @@
 >>>>>>> 78a62c2e3baad325b739e0defe51127b939aa65d
       </section>
     </main>
+=======
+    <script src="js/controllers/counterController.js"></script>
+  </head>
+  <body>
+
+    <div ng-controller="ExampleCtrl as example">
+      <h1>Example</h1>
+
+      <div>
+        <button ng-click="example.exampleService.storeTime()">Store service time</button>
+        Time is: {{ example.exampleService.currentTime }}
+      </div>
+
+      <div>
+        <button ng-click="example.exampleFactory.storeTime()">Store factory time</button>
+        Time is: {{ example.exampleFactory.currentTime }}
+      </div>
+    </div>
+
+    <div ng-controller="CounterCtrl as counterCtrl">
+      <div ng-repeat="counter in counterCtrl.counters">
+        <button ng-click="counterCtrl.decrement(counter)">-</button>
+        {{ counter.count  }}
+        <button ng-click="counterCtrl.increment(counter)">+</button>
+      </div>
+    </div>
+>>>>>>> 64afaf886cadb1de78fd5b26555d56c295cfd4f9
   </body>
 </html>

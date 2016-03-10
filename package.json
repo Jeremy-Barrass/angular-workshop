@@ -9,7 +9,11 @@
     "test": "karma start test/karma.conf.js",
     "test-single-run": "node node_modules/karma/bin/karma start test/karma.conf.js  --single-run",
     "preupdate-webdriver": "npm install",
+<<<<<<< HEAD
     "update-webdriver": "webdriver-manager update",
+=======
+    "update-webdriver": "webdriver-manager update --standalone",
+>>>>>>> 64afaf886cadb1de78fd5b26555d56c295cfd4f9
     "protractor": "protractor test/protractor-conf.js"
   },
   "license": "ISC",
